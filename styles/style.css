@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+:root {
+
+    --dark-background-color: #1f2937;
+
+
+    --text-main-color: #f9faf8;
+    --secondary-text-color: #2f3e55;
+    --quote-background-color: #E5E7EB;
+
+    --description-text-size: 18px;
+    --header-logo-size: 24px;
+    --info-text-size: 36px;
+    --h1-font-size: 48px;
+
+    --button-color: #3882f6;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    background-color: var(--secondary-text-color);
+    color: var(--text-main-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-main-color);
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: var(--secondary-text-color);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 auto;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: var(--header-logo-size);
+    color: var(--text-main-color);
+    font-weight: 700;
+}
+
+header div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+header div ul li a {
+    color: var(--quote-background-color);
+    font-size: var(--description-text-size);
+
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+
+    background-color: var(--dark-background-color);
+    color: var(--text-main-color);
+
+    height: 500px;
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #314258; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero__left,
+.hero__right {
+    flex: 1 1 30%;
+    padding: 2rem;
+}
+
+.hero__left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: #c3daf8; */
+    height: 100%;
+}
+
+.hero__left .wrapper{
+    width: 90%;
+}
+
+.hero__left h1{
+    font-size: var(--h1-font-size);
+    font-weight: 700;
+    
+}
+
+.hero__left p{
+    margin-top: 1rem;
+    font-size: var(--description-text-size);
+    color: var(--quote-background-color);
+}
+
+.hero__left button{
+    background-color: var(--button-color);
+
+    color: var(--text-main-color);
+    font-size: var(--hero-text-size);
+    font-weight: 600;
+    
+
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+
+    margin-top: 1rem;
+    width: 10rem;
+
+    
+}
+
+.hero__right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: #c3daf8; */
+    height: 100%;
+}
+
+.hero__right .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 90%;
+    background-color: #515861;
+}
+
+.card__section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.card__header{
+    font-size: var(--info-text-size);
+    margin: 2rem auto;
+    color: var(--secondary-text-color);
+}
+
+.card__container{ 
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card{
+    /* normal card, having a image on top and text under the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    border-radius: 6px;
+    padding: 2rem;
+    margin: 1rem;   
+}
+
+.card__image{
+    height: 200px;
+    width: 200px;
+    border-radius: 16px;
+    border: solid 6px #a0c6f8;
+}
+
+.card__text{
+    font-size: var(--description-text-size);
+    color: rgb(124, 124, 124);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.testimonial{
+    background: rgb(196, 196, 196);
+    height: auto;
+    width: 100%;
+    height: auto;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote__container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.quote__text{
+    font-size: var(--info-text-size);
+    color: #1f2937;
+
+    /* text-align: center; */
+
+    font-weight: 400;
+    font-style: italic;
+}
+
+.quote__signature{
+    font-size: var(--description-text-size);
+    color: #1f2937;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    text-align: end;
+}
+
+.contact{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__wrapper{
+    margin: 0 auto;
+    width: 60%;
+    height: 150px;
+    background-color: #3882f6;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: var(--text-main-color);
+}
+
+.contact__description{
+    font-size: var(--main-text-size);
+    color: var(--quote-background-color);
+    font-size: 18px;
+}
+
+.contact__right button{
+    background-color: transparent;
+
+    border-radius: 8px;
+    border: solid 2px var(--text-main-color);
+    padding: 0.5rem 2rem;
+
+    color: var(--text-main-color);
+    font-size: 18px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    background-color: var(--dark-background-color);
+    color: var(--text-main-color);
+    font-size: var(--description-text-size);
+    font-weight: 400;
+    font-style: italic;
+    padding: 2rem;
+    border-top: solid 1px var(--text-main-color);
+
+}
